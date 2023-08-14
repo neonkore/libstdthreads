@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: stdthreads
+Description: The C11 standard threads library
+Version: @PACKAGE_VERSION@
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -lstdthreads
