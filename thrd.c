@@ -28,7 +28,7 @@
  */
 
 #include <sys/cdefs.h>
-#include "locks_annotate.h"
+
 #include <pthread.h>
 #include <stdint.h>
 #include <stdlib.h>
