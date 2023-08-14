@@ -6,7 +6,7 @@ SRCS=	threads.h call_once.c cnd.c mtx.c thrd.c tss.c
 MAN=	thrd_create.3
 
 CPPFLAGS+=	-Wno-incompatible-pointer-types-discards-qualifiers
-LIBADD=	pthread
+LDADD=	-L${BSDOBJDIR}/lib/librthread -lpthread
 
 VERSION_SCRIPT= ${.CURDIR}/Symbol.map
 
