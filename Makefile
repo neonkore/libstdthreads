@@ -33,7 +33,7 @@ CLEANFILES+=	stdthreads.pc
 
 install-pc:	stdthreads.pc
 	${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m 444 \
-		stdthreads.pc ${LIBDIR}/pkgconfig
+		stdthreads.pc ${DESTDIR}${LIBDIR}/pkgconfig
 
 realinstall:	install-pc
 
